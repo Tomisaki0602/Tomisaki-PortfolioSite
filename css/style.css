@@ -551,7 +551,12 @@ img::selection {
   margin: 0;
 }
 .row-img img:nth-child(2) {
-  width: 100% !important;
+  width: 60% !important;
+}
+@media screen and (max-width: 480px) {
+  .row-img img:nth-child(2) {
+    width: 100% !important;
+  }
 }
 
 .line {
@@ -1009,14 +1014,24 @@ button.active {
 }
 
 .site-content {
+  width: auto;
   margin-top: 10px;
   padding: 15px;
   background: #f5f5f5;
   border-radius: 6px;
 }
+.site-content img {
+  width: 60% !important;
+  display: block;
+  margin: 0 auto;
+}
 @media screen and (max-width: 480px) {
   .site-content {
     margin-top: 0;
+  }
+  .site-content img {
+    width: 100% !important;
+    margin: 0;
   }
 }
 

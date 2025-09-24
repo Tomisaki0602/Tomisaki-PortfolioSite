@@ -531,7 +531,10 @@ footer{
         margin: 0;
     }
     img:nth-child(2){
-        width: 100% !important;
+        width: 60% !important;
+        @media screen and (max-width:480px){
+            width: 100% !important;
+        }
     }
 }
 .line{
@@ -919,12 +922,22 @@ footer{
   }
 }
 .site-content {
+  width: auto;
   margin-top: 10px;
   padding: 15px;
   background: #f5f5f5;
   border-radius: 6px;
+  img{
+    width: 60% !important;
+    display: block;
+    margin: 0 auto;
+  }
   @media screen and (max-width:480px){
         margin-top:0 ;
+        img{
+            width: 100% !important;
+            margin: 0;
+        }
   }
 }
 .tab-content.active {
