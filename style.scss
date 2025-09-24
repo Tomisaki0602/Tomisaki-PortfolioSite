@@ -531,12 +531,17 @@ footer{
         margin: 0;
     }
     img:nth-child(2){
-        width: 60% !important;
+        width: 100% !important;
         @media screen and (max-width:480px){
             width: 100% !important;
         }
     }
 }
+    @media screen and (max-width:480px) {
+       .row-img img{
+            width:100% !important;
+        }
+    }
 .line{
     width: 80%;
     margin: 30px auto;
@@ -778,8 +783,12 @@ height: 230px !important;
         color: #4e4e4e;
         border-radius: 0;
         width: 200px;
+         height: 40px;
+    border: none;
         @media screen and (max-width:480px) {
             width: 50%;
+            height: 40px;
+            border: none;
         }
     }
     .active{
@@ -827,7 +836,7 @@ height: 230px !important;
   @media screen and (max-width:480px){
         margin-top:0 ;
         img{
-            width: 100% !important;
+            width: 80% !important;
             margin: 0;
         }
   }

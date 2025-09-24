@@ -551,7 +551,7 @@ img::selection {
   margin: 0;
 }
 .row-img img:nth-child(2) {
-  width: 60% !important;
+  width: 100% !important;
 }
 @media screen and (max-width: 480px) {
   .row-img img:nth-child(2) {
@@ -559,6 +559,11 @@ img::selection {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .row-img img {
+    width: 100% !important;
+  }
+}
 .line {
   width: 80%;
   margin: 30px auto;
@@ -837,10 +842,14 @@ img::selection {
   color: #4e4e4e;
   border-radius: 0;
   width: 200px;
+  height: 40px;
+  border: none;
 }
 @media screen and (max-width: 480px) {
   .tabs button {
     width: 50%;
+    height: 40px;
+    border: none;
   }
 }
 .tabs .active {
@@ -897,7 +906,7 @@ img::selection {
     margin-top: 0;
   }
   .site-content img {
-    width: 100% !important;
+    width: 80% !important;
     margin: 0;
   }
 }
