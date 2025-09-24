@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/app-icon.png">
+    <title>Ryota Tomisaki Portfolio Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xab0ngk.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <h1><a href="index.html"><img src="images/header-img.png" alt=""></a></h1>
+            <nav class="header_inner-nav">
+                <ul class="header_inner-list">
+                    <li class="header_inner-item">
+                        <a href="#about">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="header_inner-item">
+                        <a href="#skills">
+                            SKILLS
+                        </a>
+                    </li>
+                    <li class="header_inner-item">
+                        <a href="#works">
+                            WORKS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="loader">
+  <div class="logo-container">
+    <div class="logo-part glasses"></div>
+    <div class="logo-part mustache"></div>
+    <div class="logo-part beard"></div>
+  </div>
+</div>
+
+
+
+
+    <main class="main">
+        <div class="main_visual">
+            <div class="main_visual-text">
+            <h2 class="h2 eachTextAnime">RYOTA TOMISAKI</h2>
+            <span class="h2_bottom fade-in">portfolio site</span>
+            </div>
+            <div class="main_visual-bg" style="text-align: center;">
+            <img src="images/main_visual-bg.png" alt="">
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <div class="about_title">
+            <h2 class="about_title-top">ABOUT</h2>
+            <span class="about_title-bottom">プロフィール</span>
+            </div>
+            <div class="about_box">
+                <img src="images/about-tomisaki-img.png" alt=""class="fade-in">
+                <div class="about_box-text">
+                    <h3 class="about_box-text-name">冨崎 涼太</h3>
+                    <ul class="about_box-text-list">
+                        <li class="about_box-text-item fade-in"><span class="li-item">[生年月日]</span>2000年6月2日</li>
+                        <li class="about_box-text-item fade-in"><span class="li-item">[所属会社]</span>株式会社ノーマーク</li>
+                        <li class="about_box-text-item fade-in"><span class="li-item">[スキル]</span>Illustrator / Photoshop / HTML / CSS / Figma / js /Wordpress</li>
+                        <li class="about_box-text-item fade-in"><span class="li-item">[住所]</span>千葉県市川市</li>
+                        <li class="about_box-text-item fade-in"><span class="li-item">[Mail]</span>tomisaki0602@gmail.com</li>
+                        <li class="about_box-text-item fade-in"><span class="li-item">[Tel]</span>080-4322-1575</li>
+                    </ul>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScC2_RCDNuPOIOjldNn3UQuh2V7T3MLreHAdkJi8HL8S5HAyw/viewform?usp=dialog" class="about_link">Contact</a>
+                </div>
+                <img src="images/about-bg.png" alt="" class="about-bg">
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            <div class="skills_title">
+            <h2 class="skills_title-top">SKILLS</h2>
+            <span class="skills_title-bottom">スキル</span>
+            </div>
+
+            <div class="card" role="region" aria-label="Radar chart example">
+                <div class="chart-wrap">
+                    <canvas id="radarCanvas" aria-label="レーダーチャート" role="img"></canvas>
+                    <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
+                </div>
+                
+                <div class="graph-wrap">
+                <div id="chartRight">
+                <canvas id="toolBarChart"></canvas>
+                </div>
+                </div>
+            </div>
+        
+            <div class="skills_box">
+                <ul class="skills_box-list">
+                    <li class="skills_box-item fade-in">
+                        <a href="#">
+                            <img src="images/skill-01.png" alt="">
+                        </a>
+                    </li>
+                    <li class="skills_box-item fade-in">
+                        <a href="#">
+                            <img src="images/skill-02.png" alt="">
+                        </a>
+                    </li>
+                    <li class="skills_box-item fade-in">
+                        <a href="#">
+                            <img src="images/skill-03.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="works" id="works">
+            <div class="works_title">
+            <h2 class="works_title-top">WORKS</h2>
+            <span class="works_title-bottom">作品集</span>
+            </div>
+            <div class="works_box">
+                <ul class="works_box-list">
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-01.html">
+                            <img src="images/work_pc-01.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">LUMIN</span>
+                            <span class="works_img-category">WEB Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-02.html">
+                            <img src="images/work_pc-02.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">Nomin</span>
+                            <span class="works_img-category">WEB Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-03.html">
+                            <img src="images/work_pc-03.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">Venus Walker</span>
+                            <span class="works_img-category">WEB Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-04.html">
+                            <img src="images/work_pc-04.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">Pocket Research</span>
+                            <span class="works_img-category">WEB Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-05.html">
+                            <img src="images/work_pc-05.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">スマモニ</span>
+                            <span class="works_img-category">WEB Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-06.html">
+                            <img src="images/work_sp-01.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">MEETIE</span>
+                            <span class="works_img-category">Application Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-07.html">
+                            <img src="images/work_sp-02.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">NITORI</span>
+                            <span class="works_img-category">Application Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-08.html">
+                            <img src="images/work_other-01.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">アルゴリズム</span>
+                            <span class="works_img-category">WEB Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-09.html">
+                            <img src="images/work_other-02.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">ノーマーク</span>
+                            <span class="works_img-category">WEB Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="works_box-item fade-in">
+                        <a href="works/works-10.html">
+                            <img src="images/work_other-03.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">アルバコネクト</span>
+                            <span class="works_img-category">Other Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                     <li class="works_box-item fade-in">
+                        <a href="works/works-11.html">
+                            <img src="images/work_other-04.jpg" alt="">
+                            <div class="works_text fade-in">
+                            <span class="works_img-title">その他</span>
+                            <span class="works_img-category">Other Design</span>
+                            </div>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <small>&copy; Ryota Tomisaki ALL Rights.</small>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/text.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/radar.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/anime.js"></script>
+    <script>
+        // フェードイン
+function showElementAnimation() {
+    var element = document.getElementsByClassName('fade-in');
+    if (!element) return;
+    var showTiming = window.innerHeight > 768 ? 200 : 60;
+    var scrollY = window.pageYOffset;
+    var windowH = window.innerHeight;
+    for (var i = 0; i < element.length; i++) {
+        var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if (scrollY + windowH - showTiming > elemY) {
+            element[i].classList.add('show');
+        } else if (scrollY + windowH < elemY) {
+        }
+    }
+}
+showElementAnimation();
+window.addEventListener('scroll', showElementAnimation);
+
+    </script>
+</body>
+</html>

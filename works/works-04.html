@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/app-icon.png">
+    <title>Ryota Tomisaki Portfolio Site</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xab0ngk.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <h1><a href="../index.html"><img src="../images/header-img.png" alt=""></a></h1>
+            <nav class="header_inner-nav">
+                <ul class="header_inner-list">
+                    <li class="header_inner-item">
+                        <a href="../index.html#about">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="header_inner-item">
+                        <a href="../index.html#skills">
+                            SKILLS
+                        </a>
+                    </li>
+                    <li class="header_inner-item">
+                        <a href="../index.html#works">
+                            WORKS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="works_visual fade-in">
+            <img src="../images/work_pc-04.jpg" alt="">
+        </div>
+    </main>
+
+    <div class="works-arrow">
+        <div>
+            <a href="works-03.html">&lt; prev</a>
+            <a href="works-05.html">next &gt;</a>
+        </div>
+    </div>
+
+    <div class="work_page-title">
+        <h2><small>在宅でできる副業モニターサイト</small>
+            <br>ポケットリサーチ</h2>
+        <span class="work_page-subtitle">WEB Design</span>
+        <p>
+            株式会社ノーマークにてデザイン部分を制作を担当しました。
+            <strong>他と同様ポケットリサーチのLPやユーザログイン後のページのデザイン
+            改修</strong>をし、新規ユーザが登録しやすいような雰囲気作りのために合わせて
+            様々なデザインを刷新しています。<strong>主にサイトで使用するバナー/LPマイ
+            ページの画面のデザイン改修/html,css,jsを使用したコーディング
+            (時にはphp部分簡単な部分の追記など)を行なっています。</strong>入社してか
+            ら現在まで改修やanalyticsなどを使った施策を行なってきました。
+            ページはそれぞれ2パターンあり、URLで遷移先を変更し条件にあったユーザが来るような仕組みになっています。
+        </p>
+    </div>
+
+    <div class="tabs">
+        <button class="tab active" data-tab="tab1">Design 1</button>
+        <button class="tab" data-tab="tab2">Design 2</button>
+    </div>
+    
+    <div id="tab1" class="tab-content active">
+       <div class="work-img">
+                <img src="../images/pc-img04.webp" alt="" class="fade-in">
+                <img src="../images/sp-img04.webp" alt="" class="fade-in">
+        </div>
+    </div>
+    <div id="tab2" class="tab-content">
+        <div class="work-img">
+                <img src="../images/pc-img05.webp" alt="" class="fade-in">
+                <img src="../images/sp-img05.webp" alt="" class="fade-in">
+        </div>
+    </div>
+
+
+    <div class="line"></div>
+    <div class="work-url">
+        <div><span>制作日:</span>2023.12.15~2025.8.25</div>
+        <div><span>サイトURL:</span><a href="https://pocket-research.jp/lp/">https://pocket-research.jp/lp/</a></div>
+    </div>
+    <footer class="footer sub">
+        <div class="pagetop top-button">TOPへ戻る</div>
+        <small>&copy; Ryota Tomisaki ALL Rights.</small>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/text.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/tab.js"></script>
+<script>
+    // IE、Safari対応
+// smoothscroll.js読み込み
+// https://github.com/iamdustan/smoothscroll
+
+// セレクタ名（.pagetop）に一致する要素を取得
+const pagetop_btn = document.querySelector(".pagetop");
+
+// .pagetopをクリックしたら
+pagetop_btn.addEventListener("click", scroll_top);
+
+// ページ上部へスムーズに移動
+function scroll_top() {
+  window.scroll({ top: 0, behavior: "smooth" });
+}
+</script>
+</body>
+</html>

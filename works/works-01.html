@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/app-icon.png">
+    <title>Ryota Tomisaki Portfolio Site</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xab0ngk.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <h1><a href="../index.html"><img src="../images/header-img.png" alt=""></a></h1>
+            <nav class="header_inner-nav">
+                <ul class="header_inner-list">
+                    <li class="header_inner-item">
+                        <a href="../index.html#about">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="header_inner-item">
+                        <a href="../index.html#skills">
+                            SKILLS
+                        </a>
+                    </li>
+                    <li class="header_inner-item">
+                        <a href="../index.html#works">
+                            WORKS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="works_visual fade-in">
+            <img src="../images/work_pc-01.jpg" alt="">
+        </div>
+    </main>
+
+    <div class="works-arrow">
+        <div>
+            <a href="#"></a>
+            <a href="works-02.html">next &gt;</a>
+        </div>
+    </div>
+
+    <div class="work_page-title">
+        <h2><small>美容皮膚科の優良情報サイト</small>
+            <br>美容医療メディア「LUMIN」</h2>
+        <span class="work_page-subtitle">WEB Design</span>
+        <p>
+            株式会社アルゴリズムにて制作を担当しました。<strong>溝の口駅前皮膚科のサブドメイン「LITY」をリニューアル</strong>し、新しいブランドイメージに
+            合わせてデザインを刷新しています。私は主にロゴ制作、アイキャッチデザイン、トップページのレイアウト、WordPressテーマのカスタマ
+            イズを担当しました。<strong>配色やタイポグラフィを工夫し、直感的に見やすいUI/UXを意識</strong>したデザインに仕上げています。
+        </p>
+    </div>
+    <div class="work-img site-content">
+        <img src="../images/pc-img01.webp" alt="" class="fade-in">
+        <img src="../images/sp-img01.webp" alt="" class="fade-in">
+    </div>
+    <div class="line"></div>
+    <div class="work-url">
+        <div><span>制作日:</span>2023.07.10~08.15</div>
+        <div><span>サイトURL:</span>none</div>
+    </div>
+    <footer class="footer sub">
+        <div class="pagetop top-button">TOPへ戻る</div>
+        <small>&copy; Ryota Tomisaki ALL Rights.</small>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/text.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script>
+        // フェードイン
+function showElementAnimation() {
+    var element = document.getElementsByClassName('fade-in');
+    if (!element) return;
+    var showTiming = window.innerHeight > 768 ? 200 : 60;
+    var scrollY = window.pageYOffset;
+    var windowH = window.innerHeight;
+    for (var i = 0; i < element.length; i++) {
+        var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if (scrollY + windowH - showTiming > elemY) {
+            element[i].classList.add('show');
+        } else if (scrollY + windowH < elemY) {
+        }
+    }
+}
+showElementAnimation();
+window.addEventListener('scroll', showElementAnimation);
+</script>
+<script>
+    // IE、Safari対応
+// smoothscroll.js読み込み
+// https://github.com/iamdustan/smoothscroll
+
+// セレクタ名（.pagetop）に一致する要素を取得
+const pagetop_btn = document.querySelector(".pagetop");
+
+// .pagetopをクリックしたら
+pagetop_btn.addEventListener("click", scroll_top);
+
+// ページ上部へスムーズに移動
+function scroll_top() {
+  window.scroll({ top: 0, behavior: "smooth" });
+}
+</script>
+</body>
+</html>
