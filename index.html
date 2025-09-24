@@ -88,18 +88,14 @@
             <span class="skills_title-bottom">スキル</span>
             </div>
 
-            <div class="card" role="region" aria-label="Radar chart example">
-                <div class="chart-wrap">
-                    <canvas id="radarCanvas" aria-label="レーダーチャート" role="img"></canvas>
-                    <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
-                </div>
-                
-                <div class="graph-wrap">
-                <div id="chartRight">
-                <canvas id="toolBarChart"></canvas>
-                </div>
-                </div>
+        <div class="chart-container">
+            <div class="chart-box" id="radarBox">
+                <canvas id="radarChart"></canvas>
             </div>
+            <div class="chart-box" id="barBox">
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
         
             <div class="skills_box">
                 <ul class="skills_box-list">
@@ -238,7 +234,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/text.js"></script>
     <script src="js/scroll.js"></script>
-    <script src="js/radar.js"></script>
     <script src="js/graph.js"></script>
     <script src="js/anime.js"></script>
     <script>
