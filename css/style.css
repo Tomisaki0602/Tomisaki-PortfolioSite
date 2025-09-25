@@ -496,6 +496,7 @@ img::selection {
 .works_visual {
   width: 100%;
   text-align: center;
+  background: rgba(242, 242, 242, 0.9490196078);
 }
 .works_visual img {
   width: 100%;
@@ -542,16 +543,21 @@ img::selection {
 }
 
 .row-img {
-  width: 60%;
+  width: 100%;
   flex-direction: column;
+  margin-top: 10px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  text-align: center;
 }
 .row-img img {
-  width: 100%;
+  width: 60%;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 .row-img img:nth-child(2) {
-  width: 100% !important;
+  width: 60% !important;
 }
 @media screen and (max-width: 480px) {
   .row-img img:nth-child(2) {
