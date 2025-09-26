@@ -7,6 +7,28 @@ body{
     font-size: 14px;
     color: #4e4e4e;
     font-family: "area-extended", sans-serif;
+    @media screen and (min-width:1200px) and (max-width:1920px) {
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+        font-size: 1.25rem;
+        .header{
+            max-width: 1920px;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+        .work_page-title p{
+            line-height: 1.85;
+            margin-bottom: 100px;
+        }
+        .tabs button{
+            height: 50px;
+            width:calc(100%/3)
+        }
+        .tab-content{
+            margin-top: 0;
+        }
+    }
 }
 ul{
     margin: 0;
@@ -522,6 +544,9 @@ footer{
     img:nth-child(2){
         width: 20% !important;
     }
+    @media screen and (max-width:480px) {
+        margin-top: 40px !important;
+    }
 }
 .row-img{
     width: 100%;
@@ -826,6 +851,9 @@ height: 230px !important;
   border-radius: 6px;
   @media screen and (max-width:480px){
         margin-top:0 ;
+        .work-img{
+            margin-top: 0 !important;
+        }
   }
 }
 .site-content {
@@ -841,8 +869,9 @@ height: 230px !important;
   }
   @media screen and (max-width:480px){
         margin-top:0 ;
+        gap:3%;
         img{
-            width: 80% !important;
+            width: 70% !important;
             margin: 0;
         }
   }
