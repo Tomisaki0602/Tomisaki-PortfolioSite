@@ -952,4 +952,11 @@ img::selection {
 
 .tab-content.active {
   display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .app-img {
+    width: 100% !important;
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -879,3 +879,10 @@ height: 230px !important;
 .tab-content.active {
   display: block;
 }
+
+.app-img{
+    @media screen and (max-width:480px){
+        width: 100% !important;
+        padding: 0;
+    }
+}
